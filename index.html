@@ -36,16 +36,18 @@
                     autocomplete="off"
                     autofocus
                   />
-                  <button class="button-add" onclick="agregarAmigo()">
-                    AÑADIR
-                  </button>
-                  <button
-                    class="button-draw"
-                    onclick="sortearAmigo()"
-                    aria-label="Sortear amigo secreto"
-                  >
-                    SORTEAR
-                  </button>
+                  <div class="button-container">
+                    <button class="button-add" onclick="agregarAmigo()">
+                      AÑADIR
+                    </button>
+                    <button
+                      class="button-draw"
+                      onclick="sortearAmigo()"
+                      aria-label="Sortear amigo secreto"
+                    >
+                      SORTEAR
+                    </button>
+                  </div>
                 </div>
 
                 <div class="output-wrapper">
@@ -57,8 +59,11 @@
                   ></ul>
                   <div class="amigo-secreto">
                     <p>Y EL AMIGO SECRETO ES...</p>
-                    <div id="resultado" class="result-list" aria-live="polite">
-                    </div>
+                    <div
+                      id="resultado"
+                      class="result-list"
+                      aria-live="polite"
+                    ></div>
                     <button class="button-restart" onclick="reiniciarSorteo()">
                       REINICIAR
                     </button>
