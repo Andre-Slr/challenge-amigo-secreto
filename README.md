@@ -23,3 +23,6 @@ Para usar la aplicación, solamente se necesita añadir nombres que no se repita
 
 ![](https://github.com/Andre-Slr/challenge-amigo-secreto/blob/main/amigo-secreto-demo.gif)
 
+## Cómo jugar
+
+Para utilizar la aplicación puedes entrar a la página de [Amigo Secreto](https://andre-slr.github.io/challenge-amigo-secreto/) o clonar el repositorio en tu dispositivo y correr `index.html`.
