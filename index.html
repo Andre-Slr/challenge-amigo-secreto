@@ -33,6 +33,8 @@
                     placeholder=""
                     maxlength="15"
                     aria-label="Nombre del amigo secreto"
+                    autocomplete="off"
+                    autofocus
                   />
                   <button class="button-add" onclick="agregarAmigo()">
                     AÑADIR
@@ -53,17 +55,33 @@
                     aria-labelledby="listaAmigos"
                     role="list"
                   ></ul>
-                  <ul id="resultado" class="result-list" aria-live="polite">
+                  <div class="amigo-secreto">
                     <p>Y EL AMIGO SECRETO ES...</p>
-                  </ul>
+                    <div id="resultado" class="result-list" aria-live="polite">
+                    </div>
+                    <button class="button-restart" onclick="reiniciarSorteo()">
+                      REINICIAR
+                    </button>
+                  </div>
                 </div>
               </section>
             </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <p class="footer-text">
+          Desarrollado por
+          <a
+            href="https://github.com/Andre-Slr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+            >Andre Solorzano</a
+          >
+        </p>
+      </footer>
     </main>
-
     <script src="app.js" defer></script>
   </body>
 </html>

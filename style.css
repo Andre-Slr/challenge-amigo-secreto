@@ -7,6 +7,7 @@
   --color-title-shadow: #c93230;
   --color-smooth-button: #9bbcd8;
   --color-smooth-button-hover: #67859f;
+  --color-smooth-button-desabled: #b0b0b0;
   --color-hard-button: #f3c435;
   --color-hard-button-hover: rgb(165, 130, 33);
   --color-font: #ffffff;
@@ -162,6 +163,11 @@ button {
   background-color: var(--color-smooth-button-hover);
 }
 
+.button-add:disabled {
+  background-color: var(--color-smooth-button-desabled);
+  cursor:default;
+}
+
 /* Botón de sortear título */
 .button-draw {
   display: flex;
@@ -184,11 +190,20 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
+.amigo-secreto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 p {
   color: var(--color-low-font);
   font-size: 18px;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 /* Listas */
@@ -204,15 +219,49 @@ li {
 }
 
 .result-list {
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   color: var(--color-font);
-  font-size: 24px;
+  font-size: 30px;
+}
+
+/* Botón de reiniciar */
+.button-restart {
+  background-color: var(--color-smooth-button);
+  color: var(--color-font);
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculto por defecto */
+  margin-top: 20px;
+}
+.button-restart:hover {
+  background-color: var(--color-smooth-button-hover);
+}
+
+/* Footer */
+.footer {
+  flex: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
   text-align: center;
+  color: var(--color-innerline);
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.footer-link {
+  color: var(--color-innerline);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main-title {
     font-size: 36px;
   }
@@ -239,6 +288,13 @@ li {
   }
 
   .result-list {
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+  .result-list {
+    font-size: 14px;
   }
 }
